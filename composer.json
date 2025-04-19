@@ -1,0 +1,19 @@
+{
+    "name": "tarekhasan/laravel-auto-slug",
+    "description": "Automatically generate and manage unique slugs for Eloquent models",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tarekhasan\\LaravelAutoSlug\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tarek H",
+            "email": "tarekhn175@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
