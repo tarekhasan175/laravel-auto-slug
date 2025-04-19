@@ -1,14 +1,32 @@
 # 🚀 Laravel Auto Slug
 
-Automatically generate and manage unique slugs for Eloquent models.
+**Laravel Auto Slug** is a lightweight, easy-to-use Laravel package that automatically generates and manages unique slugs for your Eloquent models.
+
+Perfect for blog posts, products, or any content type that needs clean, human-readable, SEO-friendly URLs.
+
+---
 
 ## 📦 Installation
 
-...
+```bash
+composer require tarekhasan/laravel-auto-slug
+
 
 ## ⚙️ Usage
 
-...
+use Illuminate\Database\Eloquent\Model;
+use Tarekhasan\LaravelAutoSlug\Traits\AutoSlug;
+
+class Post extends Model
+{
+    use AutoSlug;
+
+    protected static function booted()
+    {
+        static::bootAutoSlug('title');
+    }
+}
+
 
 ## 🧠 Features
 ✅ Automatically generates slugs for any Eloquent model field  
